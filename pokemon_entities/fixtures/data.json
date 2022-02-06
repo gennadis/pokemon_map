@@ -1,0 +1,86 @@
+[
+    {
+        "model": "pokemon_entities.pokemon",
+        "pk": 1,
+        "fields": {
+            "title_ru": "Bulbasaur",
+            "title_en": "Bulbasaur",
+            "title_jp": "フシギダネ",
+            "image": "pokemons/bulbazavr_qCzk7Ca.png",
+            "description": "cтартовый покемон двойного травяного и ядовитого типа из первого поколения и региона Канто. В национальном покедексе под номером 1. На 16 уровне эволюционирует в Ивизавра. Ивизавр на 32 уровне эволюционирует в Венузавра. Наряду с Чармандером и Сквиртлом, Бульбазавр является одним из трёх стартовых покемонов региона Канто.",
+            "evolved_from": null
+        }
+    },
+    {
+        "model": "pokemon_entities.pokemon",
+        "pk": 2,
+        "fields": {
+            "title_ru": "Ivysaur",
+            "title_en": "",
+            "title_jp": "",
+            "image": "pokemons/002Ivysaur.png",
+            "description": "",
+            "evolved_from": 1
+        }
+    },
+    {
+        "model": "pokemon_entities.pokemon",
+        "pk": 3,
+        "fields": {
+            "title_ru": "Venusaur",
+            "title_en": "",
+            "title_jp": "",
+            "image": "pokemons/003Venusaur.png",
+            "description": "",
+            "evolved_from": 2
+        }
+    },
+    {
+        "model": "pokemon_entities.pokemonentity",
+        "pk": 1,
+        "fields": {
+            "pokemon": 1,
+            "lat": 55.753244,
+            "lon": 37.628423,
+            "appeared_at": "2022-02-06T15:43:51Z",
+            "disappeared_at": "2022-02-06T15:43:53Z",
+            "level": 15,
+            "health": 15,
+            "strength": 15,
+            "defence": 15,
+            "stamina": 15
+        }
+    },
+    {
+        "model": "pokemon_entities.pokemonentity",
+        "pk": 2,
+        "fields": {
+            "pokemon": 1,
+            "lat": 55.743244,
+            "lon": 37.635423,
+            "appeared_at": "2022-02-06T15:44:18Z",
+            "disappeared_at": "2022-02-06T15:44:20Z",
+            "level": 24,
+            "health": 24,
+            "strength": 24,
+            "defence": 24,
+            "stamina": 24
+        }
+    },
+    {
+        "model": "pokemon_entities.pokemonentity",
+        "pk": 3,
+        "fields": {
+            "pokemon": 2,
+            "lat": 55.729472,
+            "lon": 37.692479,
+            "appeared_at": "2022-02-06T15:44:49Z",
+            "disappeared_at": "2022-02-06T15:44:50Z",
+            "level": 44,
+            "health": 44,
+            "strength": 44,
+            "defence": 44,
+            "stamina": 44
+        }
+    }
+]
