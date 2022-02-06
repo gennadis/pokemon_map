@@ -12,7 +12,7 @@ class Pokemon(models.Model):
     )
 
     def __str__(self):
-        return self.title
+        return self.title_ru
 
 
 class PokemonEntity(models.Model):
