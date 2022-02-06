@@ -56,15 +56,15 @@
         "pk": 2,
         "fields": {
             "pokemon": 1,
-            "lat": 55.743244,
-            "lon": 37.635423,
+            "lat": 55.703244,
+            "lon": 37.578423,
             "appeared_at": "2022-02-06T15:44:18Z",
             "disappeared_at": "2022-02-06T15:44:20Z",
-            "level": 24,
-            "health": 24,
-            "strength": 24,
-            "defence": 24,
-            "stamina": 24
+            "level": 33,
+            "health": 33,
+            "strength": 33,
+            "defence": 33,
+            "stamina": 33
         }
     },
     {
@@ -74,6 +74,54 @@
             "pokemon": 2,
             "lat": 55.729472,
             "lon": 37.692479,
+            "appeared_at": "2022-02-06T15:44:49Z",
+            "disappeared_at": "2022-02-06T15:44:50Z",
+            "level": 44,
+            "health": 44,
+            "strength": 44,
+            "defence": 44,
+            "stamina": 44
+        }
+    },
+    {
+        "model": "pokemon_entities.pokemonentity",
+        "pk": 4,
+        "fields": {
+            "pokemon": 2,
+            "lat": 55.739472,
+            "lon": 37.672479,
+            "appeared_at": "2022-02-06T15:44:49Z",
+            "disappeared_at": "2022-02-06T15:44:50Z",
+            "level": 45,
+            "health": 45,
+            "strength": 45,
+            "defence": 45,
+            "stamina": 45
+        }
+    },
+    {
+        "model": "pokemon_entities.pokemonentity",
+        "pk": 5,
+        "fields": {
+            "pokemon": 3,
+            "lat": 55.700472,
+            "lon": 37.600479,
+            "appeared_at": "2022-02-06T15:44:49Z",
+            "disappeared_at": "2022-02-06T15:44:50Z",
+            "level": 44,
+            "health": 44,
+            "strength": 44,
+            "defence": 44,
+            "stamina": 44
+        }
+    },
+    {
+        "model": "pokemon_entities.pokemonentity",
+        "pk": 6,
+        "fields": {
+            "pokemon": 3,
+            "lat": 55.710472,
+            "lon": 37.610479,
             "appeared_at": "2022-02-06T15:44:49Z",
             "disappeared_at": "2022-02-06T15:44:50Z",
             "level": 44,
