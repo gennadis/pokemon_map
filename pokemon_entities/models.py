@@ -1,4 +1,4 @@
-from django.db import models  # noqa F401
+from django.db import models
 
 
 class Pokemon(models.Model):
@@ -9,24 +9,21 @@ class Pokemon(models.Model):
     title_en = models.CharField(
         verbose_name="Название на английском",
         max_length=200,
-        null=True,
         blank=True,
     )
     title_jp = models.CharField(
         verbose_name="Название на японском",
         max_length=200,
-        null=True,
         blank=True,
     )
     image = models.ImageField(
         verbose_name="Изображение",
         upload_to="pokemons",
-        blank=True,
         null=True,
+        blank=True,
     )
     description = models.TextField(
         verbose_name="Описание",
-        null=True,
         blank=True,
     )
     evolved_from = models.ForeignKey(
@@ -50,13 +47,19 @@ class PokemonEntity(models.Model):
     )
     lat = models.FloatField(verbose_name="Широта")
     lon = models.FloatField(verbose_name="Долгота")
-    appeared_at = models.DateTimeField(verbose_name="Время появления")
-    disappeared_at = models.DateTimeField(verbose_name="Время исчезновения")
-    level = models.IntegerField(verbose_name="Уровень")
-    health = models.IntegerField(verbose_name="Здоровье")
-    strength = models.IntegerField(verbose_name="Сила")
-    defence = models.IntegerField(verbose_name="Защита")
-    stamina = models.IntegerField(verbose_name="Выносливость")
+
+    appeared_at = models.DateTimeField(
+        verbose_name="Время появления", null=True, blank=True
+    )
+    disappeared_at = models.DateTimeField(
+        verbose_name="Время исчезновения", null=True, blank=True
+    )
+
+    level = models.IntegerField(verbose_name="Уровень", null=True, blank=True)
+    health = models.IntegerField(verbose_name="Здоровье", null=True, blank=True)
+    strength = models.IntegerField(verbose_name="Сила", null=True, blank=True)
+    defence = models.IntegerField(verbose_name="Защита", null=True, blank=True)
+    stamina = models.IntegerField(verbose_name="Выносливость", null=True, blank=True)
 
     def __str__(self):
         return f"{self.pokemon} @ ({self.lat}, {self.lon})"
