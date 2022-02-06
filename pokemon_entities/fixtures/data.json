@@ -3,11 +3,11 @@
         "model": "pokemon_entities.pokemon",
         "pk": 1,
         "fields": {
-            "title_ru": "Bulbasaur",
+            "title_ru": "Бульбазавр",
             "title_en": "Bulbasaur",
             "title_jp": "フシギダネ",
-            "image": "pokemons/bulbazavr_qCzk7Ca.png",
-            "description": "cтартовый покемон двойного травяного и ядовитого типа из первого поколения и региона Канто. В национальном покедексе под номером 1. На 16 уровне эволюционирует в Ивизавра. Ивизавр на 32 уровне эволюционирует в Венузавра. Наряду с Чармандером и Сквиртлом, Бульбазавр является одним из трёх стартовых покемонов региона Канто.",
+            "image": "pokemons/Bulbasaur.png",
+            "description": "is a Grass/Poison-type Pokémon introduced in Generation I. It evolves into Ivysaur starting at level 16. It is one of the three Starter Pokémon that can be chosen in the Kanto region.",
             "evolved_from": null
         }
     },
@@ -15,11 +15,11 @@
         "model": "pokemon_entities.pokemon",
         "pk": 2,
         "fields": {
-            "title_ru": "Ivysaur",
-            "title_en": "",
-            "title_jp": "",
-            "image": "pokemons/002Ivysaur.png",
-            "description": "",
+            "title_ru": "Ивизавр",
+            "title_en": "Ivysaur",
+            "title_jp": "フシギソウ",
+            "image": "pokemons/Ivysaur.png",
+            "description": "is a Grass/Poison Pokémon introduced in Generation I. It evolves from Bulbasaur starting at level 16, and evolves into Venusaur starting at level 32.",
             "evolved_from": 1
         }
     },
@@ -27,11 +27,11 @@
         "model": "pokemon_entities.pokemon",
         "pk": 3,
         "fields": {
-            "title_ru": "Venusaur",
-            "title_en": "",
-            "title_jp": "",
-            "image": "pokemons/003Venusaur.png",
-            "description": "",
+            "title_ru": "Венузавр",
+            "title_en": "Venusaur",
+            "title_jp": "フシギバナ",
+            "image": "pokemons/Venusaur.png",
+            "description": "is a Grass/Poison-type Pokémon. It is the mascot for Pokémon Green and Pokémon LeafGreen and the final form of Bulbasaur.",
             "evolved_from": 2
         }
     },
