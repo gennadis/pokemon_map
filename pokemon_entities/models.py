@@ -14,4 +14,4 @@ class PokemonEntity(models.Model):
     lon = models.FloatField()
 
     def __str__(self):
-        return self.lat, self.lon
+        return f"{self.lat}, {self.lon}"
