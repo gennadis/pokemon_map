@@ -1,6 +1,6 @@
 # Карта покемонов
 
-![screenshot](https://dvmn.org/filer/canonical/1563275070/172/)
+![screenshot](Screenshot.png)
 
 ### Предметная область
 
