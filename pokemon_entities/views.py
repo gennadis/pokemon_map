@@ -60,6 +60,10 @@ def show_pokemon(request, pokemon_id):
     try:
         pokemon = Pokemon.objects.get(pk=pokemon_id)
 
+    except Pokemon.DoesNotExist:
+        return HttpResponseNotFound("<h1>Такой покемон не найден</h1>")
+
+    else:
         pokemon_attributes = {
             "pokemon_id": pokemon.pk,
             "title_ru": pokemon.title_ru,
@@ -76,10 +80,14 @@ def show_pokemon(request, pokemon_id):
                 "img_url": request.build_absolute_uri(pokemon.evolved_from.image.url),
             }
 
-    except Pokemon.DoesNotExist:
-        return HttpResponseNotFound("<h1>Такой покемон не найден</h1>")
+        next_evolution = pokemon.evolutions.first()
+        if next_evolution:
+            pokemon_attributes["next_evolution"] = {
+                "title_ru": next_evolution.title_ru,
+                "pokemon_id": next_evolution.pk,
+                "img_url": request.build_absolute_uri(next_evolution.image.url),
+            }
 
-    else:
         folium_map = folium.Map(location=MOSCOW_CENTER, zoom_start=12)
         for pokemon_entity in PokemonEntity.objects.filter(pokemon=pokemon):
             add_pokemon(
