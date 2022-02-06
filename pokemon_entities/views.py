@@ -41,7 +41,7 @@ def show_all_pokemons(request):
         {
             "pokemon_id": pokemon.pk,
             "img_url": pokemon.image.url,
-            "title_ru": pokemon.title,
+            "title_ru": pokemon.title_ru,
         }
         for pokemon in Pokemon.objects.all()
     ]
@@ -61,7 +61,7 @@ def show_pokemon(request, pokemon_id):
         pokemon = Pokemon.objects.get(pk=pokemon_id)
         pokemon_attributes = {
             "pokemon_id": pokemon.pk,
-            "title_ru": pokemon.title,
+            "title_ru": pokemon.title_ru,
             "title_en": pokemon.title_en,
             "title_jp": pokemon.title_jp,
             "img_url": request.build_absolute_uri(pokemon.image.url),
