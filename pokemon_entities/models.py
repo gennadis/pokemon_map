@@ -32,7 +32,7 @@ class Pokemon(models.Model):
         null=True,
         blank=True,
         on_delete=models.SET_NULL,
-        related_name="evolutions",
+        related_name="next_evolution",
     )
 
     def __str__(self):
