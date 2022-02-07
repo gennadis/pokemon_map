@@ -1,6 +1,6 @@
 # Pokemon map
 
-![screenshot](media/Screenshot.png)
+![screenshot](Screenshot.png)
 
 ## Предметная область
 Сайт для помощи по игре [Pokemon GO](https://www.pokemongo.com/en-us/). Это игра про ловлю [покемонов](https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%BA%D0%B5%D0%BC%D0%BE%D0%BD).
